@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Group 30">
+    <meta name="description" content="This is the news about anything what u need">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adaja News</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -8,12 +13,21 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Ada<span>ja</span> News</h1>
+                <h1 class="blog"><a href="/blog">Ada<span>ja</span> News</a></h1>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Article</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropbtn">Category</a>
+                    <div class="dropdown-content">
+                        <a href="/category/tech">Technology</a>
+                        <a href="/category/health">Health</a>
+                        <a href="/category/sports">Sports</a>
+                        <a href="/category/lifeStyle">Life Style</a>
+                    </div>                 
+                </li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/regist"><img src="asset/human.jpg" alt="" class="profil"> Profile</a></li>
             </ul>
             <div class="burgermenu">
                 <input type="checkbox">
