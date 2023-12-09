@@ -766,20 +766,27 @@ small {
   margin-bottom: 10px;
 }
 
-.titleAboutUs > h1 {
+.text {
+  background: linear-gradient(
+    75deg,
+    rgb(5, 1, 19),
+    rgb(28, 28, 95),
+    rgb(102, 100, 212)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
-  height: 50px;
 }
 
 .titleAboutUs > h3 {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   padding: 30px;
   margin: 0px 150px;
-  color: #767676;
+  color: #4d4c4c;
 }
 
 .informationAboutUs {
@@ -857,6 +864,7 @@ small {
 
 .slide {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
