@@ -22,10 +22,6 @@
   --border-radius-3: 0.8rem;
 }
 
-/* html {
-	scroll-behavior: smooth;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -41,19 +37,10 @@
 
 body {
   line-height: 1.6;
-  /* display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh; */
   background: var(--color-bg);
   overflow-x: hidden;
-  /* background-size: cover; */
-  /* background-position: center; */
   color: var(--color-gray-1);
-  /* padding: 28px 12%; */
   font-size: 17px;
-  /* padding-left: 80px;
-	padding-right: 80px; */
 }
 
 .container {
@@ -98,7 +85,7 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
-  height: 331px; /* Sesuaikan tinggi sesuai kebutuhan */
+  height: 331px;
 }
 
 /* .........START NAVBAR.................. */
@@ -110,9 +97,8 @@ nav {
   top: 0;
   right: 0;
   z-index: 10;
-  /* box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); */
   padding: 28px 12%;
-  background-color: transparent;
+  background-color: #e0e1ddbb;
 }
 
 nav .hamburger {
@@ -156,7 +142,6 @@ nav .nav-link {
 
 .nav-link a:hover {
   color: var(--color-gray-1);
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);; */
 }
 
 nav .nav-profile {
@@ -181,7 +166,6 @@ nav .nav-profile ul {
   display: block;
   padding: 1rem;
   background: var(--color-success);
-  /* border-radius: var(--border-radius-1); */
 }
 
 .nav-profile ul li:last-child a {
@@ -305,7 +289,21 @@ nav .nav-profile ul {
       rgba(142, 142, 142, 0.3),
       rgba(43, 43, 43, 0.3)
     ),
-    url(../img/alam.jpg);
+    url(../img/Gaza.jpg);
+  background-size: cover;
+  height: 400px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.big-recomendation2 {
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(142, 142, 142, 0.3),
+      rgba(43, 43, 43, 0.3)
+    ),
+    url(../img/village.jpg);
   background-size: cover;
   height: 400px;
   border-radius: 5px;
@@ -384,14 +382,14 @@ nav .nav-profile ul {
 .recommendation-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: -50px;
   overflow: hidden;
 }
 
 .image-container {
   overflow: hidden;
   width: 41%;
-  height: 85px;
+  height: 150px;
   margin-right: 20px;
 }
 
@@ -400,6 +398,17 @@ nav .nav-profile ul {
   height: 100%;
   transition: transform 0.3s ease-in-out;
   border-radius: 5px;
+}
+
+.recomendation-aside .recommendation-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.recomendation-aside .image-container {
+  height: 80px;
 }
 
 .image-container:hover img {
@@ -428,10 +437,6 @@ nav .nav-profile ul {
   font-size: 12px;
   color: #8d8d8d;
   margin-top: 10px;
-}
-
-.little_content {
-  margin-top: 50px;
 }
 
 /* .......... Divider ............. */
@@ -491,11 +496,16 @@ small {
 /* ........... END FEATURED POST ........... */
 
 /* ........... START MAIN POST ........... */
-.post-container {
+.containt,
+.little-wraper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   margin: 5rem auto;
+}
+
+.post {
+  margin: 0;
 }
 
 .post-info a {
@@ -1100,20 +1110,6 @@ body .options .option {
   color: var(--color-gray-1);
 }
 
-/* .fa-linkedin {
-  background: white;
-  color: #0d1b2a;
-}
-
-.fa-github {
-  background: white;
-  color: #0d1b2a;
-}
-
-.fa-square-instagram {
-  background: white;
-  color: #0d1b2a;
-} */
 /* ........... END ABOUT US ........... */
 
 /* ........... START SIGN-UP ........... */
@@ -1242,7 +1238,6 @@ form small a {
 .dashboard table th {
   padding: 0.8rem;
   background: var(--color-primary);
-  /* border-radius: var(--border-radius-1); */
 }
 
 .dashboard table td {
@@ -1348,6 +1343,29 @@ form small a {
     border-color: var(--color-light);
   }
 
+  .recommendation-item {
+    display: inline-block;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .isi-rekomendasi {
+    width: 100%;
+  }
+
+  .jumbotron .para {
+    font-size: 13px;
+  }
+
+  .jumbo {
+    color: white;
+    font-size: 22px;
+  }
+
   /* FEATURE */
   .featured-container {
     gap: 3rem;
@@ -1355,8 +1373,7 @@ form small a {
     grid-template-columns: 1fr;
   }
 
-  /* POST */
-  .post-container {
+  .containt {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
@@ -1365,6 +1382,10 @@ form small a {
   .single-post-container {
     padding: 1.2rem;
     width: 90%;
+  }
+
+  .big-text {
+    padding-top: 170px;
   }
 
   /* DASHBOARD */
@@ -1391,10 +1412,13 @@ form small a {
     width: 90%;
     gap: 0.5rem;
   }
-  .post-container {
+
+  .containt,
+  .recommendation-item {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
   .category-container {
     grid-template-columns: 1fr 1fr;
     width: 90%;
