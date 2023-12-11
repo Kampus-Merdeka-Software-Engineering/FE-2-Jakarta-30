@@ -1,6 +1,6 @@
 async function fetchNews() {
     try {
-      const response = await fetch('http://localhost:8000/nature', {
+      const response = await fetch('https://erin-difficult-gopher.cyclic.app/nature', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

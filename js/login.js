@@ -1,23 +1,3 @@
-// async function login() {
-//   const email = document.getElementById("loginEmail").value;
-//   const password = document.getElementById("loginPassword").value;
-
-//   const response = await fetch("http://localhost:8000/api/auth/signin", {
-//     method: "post",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({ username: email, password }),
-//   });
-
-//   const data = await response.json();
-
-//   if (response.ok) {
-//     alert(data.message);
-//   } else {
-//     alert(data.message);
-//   }
-// }
 
 // JavaScript
 async function login() {
@@ -28,7 +8,7 @@ async function login() {
   document.getElementById("errorMessage").innerHTML = "";
 
   try {
-    const response = await fetch("http://localhost:8000/api/auth/login", {
+    const response = await fetch("https://erin-difficult-gopher.cyclic.app/api/auth/login", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

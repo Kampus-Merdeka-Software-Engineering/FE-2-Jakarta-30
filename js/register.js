@@ -17,7 +17,7 @@ async function register() {
   }
 
   try {
-    const response = await fetch("http://localhost:8000/api/auth/signup", {
+    const response = await fetch("https://erin-difficult-gopher.cyclic.app/api/auth/signup", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
