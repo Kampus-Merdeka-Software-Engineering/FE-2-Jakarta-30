@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Group 30" />
-    <meta
-      name="description"
-      content="This is the news about Nusantara and The World"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>30UPdays | Please Login</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="icon" href="img/logo-tab.png" type="image/png" />
-    <link rel="shortcut icon" href="img/logo-tab.png" type="image/png" />
-  </head>
-  <body class="body">
-    <!--------------------- start login --------------------->
-    <section class="form-section">
-      <div class="container form-section-container">
-        <h2>Sign In</h2>
-        <div class="message-alert message-alert-success">
-          <p>Success Message</p>
-        </div>
-        <form action="">
-          <!-- <input type="text" placeholder="username"> -->
-          <input type="email" placeholder="Username or Email" />
-          <input type="password" placeholder="Password" />
-          <button type="submit" class="button">Sign In</button>
-          <small>First Time Here?<a href="register.html">Register</a></small>
-        </form>
-      </div>
-    </section>
-    <!--------------------- end login --------------------->
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Group 30">
+	<meta name="description" content="This is the news about Nusantara and The World">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>30UPdays</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="icon" href="img/logo-tab.png" type="image/png">
+  <link rel="shortcut icon" href="img/logo-tab.png" type="image/png">
+</head>
+<body class="body">
 
-    <!--------------------- script --------------------->
-    <script src="js/main.js"></script>
-  </body>
+	<!--------------------- start login --------------------->
+  <section class="form-section">
+    <div class="container form-section-container">
+      <h2>Sign In</h2>
+      <div class="message-alert message-alert-success" id="errorMessage">
+        <p>Success Message</p>
+      </div>
+      <form id="loginForm">
+        <!-- <input type="text" placeholder="username"> -->
+        <input type="email" id="loginUsername" placeholder="Username or Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button type="submit" class="button" onclick="login()">Sign In</button>
+        <small>First Time Here?<a href="register.html">Register</a></small>
+      </form>
+      <a href="index.html" class="back">Back</a></small>
+    </div>
+  </section>
+	<!--------------------- end login --------------------->
+
+
+  
+	<!--------------------- script --------------------->
+  <script src="js/login.js"></script>
+</body>
 </html>

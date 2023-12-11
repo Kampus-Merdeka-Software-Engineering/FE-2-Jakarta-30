@@ -190,6 +190,7 @@ nav .nav-profile ul {
 .jumbotron-container {
   background-color: #1b263b;
   margin-top: 5rem;
+  margin-bottom: 100px;
 }
 
 .jumbotron {
@@ -207,7 +208,7 @@ nav .nav-profile ul {
 }
 
 .jumbotron .para {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .jumbo {
@@ -257,6 +258,8 @@ nav .nav-profile ul {
   padding: 0.5rem 1rem;
   border-radius: 3px;
   cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .category-btn:hover {
@@ -273,13 +276,21 @@ nav .nav-profile ul {
   margin: auto;
 }
 
+.judul-recomendation {
+	margin-bottom: 40px;
+}
+
+.judul-recomendation h3 {
+	font-size: 30px;
+}
+
 .recomendation-wrap {
   display: flex;
 }
 
 .article-recomendation {
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 
 .big-recomendation {
@@ -289,85 +300,24 @@ nav .nav-profile ul {
       rgba(142, 142, 142, 0.3),
       rgba(43, 43, 43, 0.3)
     ),
-    url(../img/Gaza.jpg);
+    url(https://source.unsplash.com/random?scenery);
   background-size: cover;
-  height: 400px;
+  height: 500px;
   border-radius: 5px;
   border: 2px solid black;
 }
 
-.big-recomendation2 {
-  width: 100%;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(142, 142, 142, 0.3),
-      rgba(43, 43, 43, 0.3)
-    ),
-    url(../img/village.jpg);
-  background-size: cover;
-  height: 400px;
-  border-radius: 5px;
-  border: 2px solid black;
+.kategori {
+	background-image: linear-gradient(to bottom, rgba(142, 142, 142, 0.3), rgba(43, 43, 43, 0.3)), url(https://source.unsplash.com/random?tech); 
 }
 
-.big-text {
-  padding: 250px 20px 0 20px;
-  color: white;
+.photo {
+	background-image: linear-gradient(to bottom, rgba(142, 142, 142, 0.3), rgba(43, 43, 43, 0.3)), url(https://source.unsplash.com/random?photo); 
 }
 
-.big-text a {
-  color: #ffffff;
-  font-size: 25px;
+.nature {
+	background-image: linear-gradient(to bottom, rgba(142, 142, 142, 0.3), rgba(43, 43, 43, 0.3)), url(https://source.unsplash.com/random?nature); 
 }
-
-.big-text a:hover {
-  font-size: 26px;
-}
-
-.big-text p {
-  font-size: 15px;
-  padding-top: 10px;
-}
-
-/* Bagian Kartu kecil */
-
-.kartu {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-}
-
-.kartu1 {
-  width: 32%;
-  height: 390px;
-  overflow: hidden;
-}
-
-.kartu1 a:hover {
-  font-size: 19px;
-  color: #555;
-}
-
-.kartu1 img {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 2px solid black;
-}
-
-.kartu1 a {
-  text-decoration: none;
-  color: rgb(38, 38, 38);
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.kartu1 p {
-  margin-top: 5px;
-}
-
-/* Bagian Aside */
 
 .recomendation-aside {
   width: 29%;
@@ -376,7 +326,10 @@ nav .nav-profile ul {
 
 .top-recomendation {
   margin-bottom: 20px;
-  font-size: 30px;
+}
+
+.top-recomendation h4 {
+	font-size: 25px;
 }
 
 .recommendation-item {
@@ -389,7 +342,7 @@ nav .nav-profile ul {
 .image-container {
   overflow: hidden;
   width: 41%;
-  height: 150px;
+  height: 120px;
   margin-right: 20px;
 }
 
@@ -677,6 +630,7 @@ small {
   padding: 0.6rem 1rem;
   border-radius: var(--border-radius-2);
   color: var(--color-gray-1);
+  margin-bottom: 100px;
 }
 
 .search-container > div {
@@ -1458,21 +1412,21 @@ form small a {
 
   /* Post */
 
-  .big-recomendation {
+  /* .big-recomendation {
     overflow: hidden;
-  }
+  } */
 
-  .big-recomendation .big-text {
+  /* .big-recomendation .big-text {
     padding: 200px 20px 0 20px;
-  }
+  } */
 
-  .big-text a {
+  /* .big-text a {
     font-size: 20px;
-  }
+  } */
 
-  .recomendation-wrap {
+  /* .recomendation-wrap {
     display: inline-block;
-  }
+  } */
 
   .article-recomendation {
     width: 100%;
